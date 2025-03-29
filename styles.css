@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+body{
+  
+  /* Variable colors for ease of palatte changes */
+  --light: #e5fff9;
+  --color: #6cBA81;
+  --dark: #231942;
+  --accent: #b0713B;
+  
+  background: var(--light) url(https://assets.codepen.io/4152792/Illustration2.png) 60vw 30vh / auto 100vh no-repeat;
+  color: var(--dark);
+  font-family:Raleway;
+}
+
+/* FONT STYLING */
+h1{
+  color:var(--color);
+  font-size:2em;
+}
+h2,h3{
+  color: var(--accent);
+}
+p{
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+p a,p a:link,p a:active{
+  text-decoration:none;
+  color: var(--accent);
+}
+p a:hover{
+  background:var(--accent);
+  color:white
+}
+p a:visited{
+  color: var(--color);
+}
+
+/* HEADER */
+header{
+  border-bottom: solid var(--color);
+  height:20vh;
+  padding:1vh;
+}
+
+#logo{
+  position:absolute;
+  margin:auto;
+  display:inline-block;
+  width:20vh;
+  height:20vh;
+  background: white url() center / contain no-repeat;
+}
+#logo a{
+  position:absolute;
+  margin:auto;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  text-decoration:none;
+}
+
+nav{
+  display:flex;
+  float:right;
+  margin:auto;
+  width:calc(100% - 20vh);
+  height:100%;
+  flex-flow:row;
+  justify-content:flex-end;
+  align-items: flex-end;
+}
+
+nav *{
+  margin:1vh;
+}
+
+nav a{
+  text-decoration:none;
+  color: var(--dark);
+  padding:1vh;
+  font-size:1.5em;
+  border-radius:.5em;
+}
+nav a:hover{
+  background: var(--accent);
+  color:white;
+}
+
+/* MAIN */
+
+section{
+  margin:1vh;
+  height:fit-content;
+  padding:5vh;
+  background:rgb(255,255,255,.5);
+  border: solid var(--color) .3vh;
+  border-radius:3vh;
+}
+
+section:has(.large){
+  min-height:30vw;
+}
+
+/* universal class for large images floating to the right */
+.large{
+  position:relative;
+  display:block;
+  float:right;
+  width:30vw;
+  height:30vw;
+  background:white;
+}
+
+/* UNIVERSAL WIDGETS */
+.buttonLink{
+  position:relative;
+  margin-top:1vh;
+  display:block;
+  width:fit-content;
+  height:fit-content;
+  background:var(--color);
+  border-radius:1vh;
+  color:white;
+  text-decoration:none;
+  padding:2vh;
+}
+
+.buttonLink:hover{
+  color:var(--color);
+  background:white;
+}
