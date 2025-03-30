@@ -82,7 +82,7 @@ function loadCartPage() {
   }
   
   // only runs this if on cart.html
-  if (window.location.href.includes("cart.html")) {
+  if (window.location.href.includes("/cart")) {
     loadCartPage();
   }  
   
