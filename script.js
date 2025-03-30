@@ -82,9 +82,9 @@ function loadCartPage() {
   }
   
   // only runs this if on cart.html
-  if (window.location.pathname.includes("cart.html")) {
+  if (window.location.href.includes("cart.html")) {
     loadCartPage();
-  }
+  }  
   
   // newsletter form validation
   const newsletterForm = document.getElementById("newsletter-form");
