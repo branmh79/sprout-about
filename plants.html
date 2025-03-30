@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sprout & About Home</title>
+  <title>Sprout & About - Plants</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
@@ -24,23 +24,28 @@
   </header>
 
   <main>
-    <section>
-      <img class="large" src="" alt="" />
-      <h1>Helping You Keep Your Plants Happy</h1>
-      <p>Sprout & About has everything you need to give your plants the care they deserve. Discover simple tips, plant profiles, and helpful advice to keep your leafy friends alive!</p>
-      <a href="tips.html" class="buttonLink">Learn Plant Care</a>
-    </section>
+    <section id="plant-shop">
+        <h2>Popular Plants</h2>
+        <div class="plant-list">
+          <div class="plant-card" data-id="1" data-name="Snake Plant" data-price="12">
+            <h3>Snake Plant</h3>
+            <p>$12</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="plant-card" data-id="2" data-name="Monstera" data-price="18">
+            <h3>Monstera</h3>
+            <p>$18</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+          <div class="plant-card" data-id="3" data-name="Pothos" data-price="10">
+            <h3>Pothos</h3>
+            <p>$10</p>
+            <button class="add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </section>      
   </main>
-  
-  <section id="newsletter">
-    <h2>Join Our Plant Care Newsletter</h2>
-    <form id="newsletter-form">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-      <button type="submit">Subscribe</button>
-    </form>
-  </section>
-  
+
   <footer>
     <p>&copy; 2025 Our Group. All rights reserved.</p>
   </footer>

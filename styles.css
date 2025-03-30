@@ -133,3 +133,110 @@ section:has(.large){
   color:var(--color);
   background:white;
 }
+
+#plant-shop {
+  margin-top: 4vh;
+}
+
+.plant-list {
+  display: flex;
+  gap: 2vh;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.plant-card {
+  flex: 0 0 250px;
+}
+
+.plant-card button {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 1vh;
+  border-radius: 0.5vh;
+  cursor: pointer;
+}
+
+.plant-card button:hover {
+  background: var(--color);
+}
+
+.cart-item {
+  background: #fff;
+  padding: 2vh;
+  border: 2px solid var(--color);
+  border-radius: 1vh;
+  margin-bottom: 2vh;
+}
+
+.cart-item button {
+  background: crimson;
+  color: white;
+  padding: 1vh;
+  border: none;
+  border-radius: 0.5vh;
+  cursor: pointer;
+}
+
+#cart-summary {
+  font-size: 1.2em;
+  margin-top: 2vh;
+}
+
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 1vh;
+  overflow: hidden;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+  padding: 1.5vh;
+  text-align: left;
+  border-bottom: 1px solid var(--color);
+}
+
+.table-wrapper th {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+#newsletter {
+  margin: 1vh;
+  padding: 5vh;
+  background: rgb(255, 255, 255, 0.5);
+  border: solid var(--color) 0.3vh;
+  border-radius: 3vh;
+  max-width: 600px;
+}
+
+#newsletter h2 {
+  color: var(--accent);
+}
+
+#newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+#newsletter-form input,
+#newsletter-form button {
+  padding: 1vh;
+  font-size: 1em;
+  border-radius: 0.5vh;
+  border: 1px solid var(--color);
+}
+
+#newsletter-form button {
+  background-color: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+
+#newsletter-form button:hover {
+  background-color: var(--color);
+}
