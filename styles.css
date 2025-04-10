@@ -40,27 +40,31 @@ p a:visited{
 
 /* HEADER */
 header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-bottom: solid var(--color);
-  height:20vh;
-  padding:1vh;
+  padding:1vh 2vw;
 }
 
 #logo{
-  position:absolute;
-  margin:auto;
   display:inline-block;
-  width:20vh;
-  height:20vh;
-  background: white url() center / contain no-repeat;
+  width:15vw;
+  height:15vw;
+  position: relative;
 }
-#logo a{
-  position:absolute;
-  margin:auto;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  text-decoration:none;
+#logo img {
+  width: 100%; 
+  height: auto;
+  display: block; /* remove weird spacing caused by inline images */
+}
+
+#logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  position: relative; 
 }
 
 nav{
@@ -106,13 +110,14 @@ section:has(.large){
 }
 
 /* universal class for large images floating to the right */
-.large{
-  position:relative;
-  display:block;
-  float:right;
-  width:30vw;
-  height:30vw;
-  background:white;
+.large {
+  position: relative;
+  display: block;
+  float: right;
+  width: 30vw; 
+  height: auto; /* Important: let height adjust automatically */
+  max-width: 100%;
+  opacity: 0.95; /*slight blending */
 }
 
 /* UNIVERSAL WIDGETS */
