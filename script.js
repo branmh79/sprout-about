@@ -17,12 +17,14 @@ document.querySelectorAll(".add-to-cart").forEach((button) => {
     const id = card.dataset.id;
     const name = card.dataset.name;
     const price = parseFloat(card.dataset.price);
+    const imgElement = card.querySelector(".plant-img");//grab the image
+    const imgSrc = imgElement ? imgElement.src : ""; //grabs the img src 
 
     const existingItem = cart.find((item) => item.id === id);
     if (existingItem) {
       existingItem.qty += 1;
     } else {
-      cart.push({ id, name, price, qty: 1 });
+      cart.push({ id, name, price, qty: 1, img: imgSrc });
     }
 
     try {
@@ -59,6 +61,7 @@ function loadCartPage() {
       div.className = "cart-item";
       div.innerHTML = `
         <p><strong>${item.name}</strong></p>
+        <img src="${item.img}" alt="${item.name}" style="width:100px;height:auto;">
         <p>Price: $${item.price}</p>
         <p>Quantity: ${item.qty}</p>
         <p>Subtotal: $${itemTotal.toFixed(2)}</p>
