@@ -41,6 +41,7 @@ p a:visited{
 /* HEADER */
 header{
   display: flex;
+  flex-wrap: wrap; /*adjust for small screens*/
   align-items: center;
   justify-content: space-between;
   border-bottom: solid var(--color);
@@ -115,9 +116,9 @@ section:has(.large){
   display: block;
   float: right;
   width: 30vw; 
-  height: auto; /* Important: let height adjust automatically */
+  height: auto; /*let height adjust automatically */
   max-width: 100%;
-  opacity: 0.95; /*slight blending */
+  opacity: 0.95; /*light blending */
 }
 
 /* UNIVERSAL WIDGETS */
@@ -244,4 +245,17 @@ section:has(.large){
 
 #newsletter-form button:hover {
   background-color: var(--color);
+}
+
+.plant-img {
+  width: 100px;
+  height: 150px;
+  display: block;
+  padding: 0;
+  object-fit: cover;
+  border-radius: 1vh;
+  
+}
+.plant-img:hover {
+  transform: scale(1.2); 
 }
