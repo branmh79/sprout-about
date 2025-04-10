@@ -1,21 +1,21 @@
 // Plants
 // They all need an id#, display name, growth type, light-level, easy care (boolean), air purifying(boolean), humidity level, plant type/family, and an image that will be the image displayed for said plant
 const products = [
-  { id: 1, name: 'Black Velvet', growth: 'Foliage', lightLevel: 'medium-light', easyCare: false, airPurifying: true, humidityLevel: 'Tropical', plantType:'Alocasia', petSafe: false, imageSrc: '/images.black-velvet.jpg' },
-  { id: 2, name: 'Monstera Split-Leaf', growth: 'Foliage', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'Tropical', plantType:'Philodendron', petSafe: false, imageSrc: '/images.monstera-deliciosa.jpg' },
-  { id: 3, name: 'Monstera Thai-Constellation', growth: 'Foliage', lightLevel: 'medium-light', easyCare: false, airPurifying: true, humidityLevel: 'Tropical', plantType:'Philodendron', petSafe: false, imageSrc: '/images.monstera-thai.jpg' },
-  { id: 4, name: 'Golden Pothos', growth: 'Vining', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'Temperate', plantType:'Pothos', petSafe: false, imageSrc: '/images.pothos.jpg' },
-  { id: 5, name: 'Neon Pothos', growth: 'Vining', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'Temperate', plantType:'Pothos', petSafe: false, imageSrc: '/images.neon-pothos.jpg' },
-  { id: 6, name: 'String of Hearts', growth: 'Succulent', lightLevel: 'high-light', easyCare: true, airPurifying: false, humidityLevel: 'arid', plantType:'Succulent', petSafe: true, imageSrc: '/images.string-hearts.jpg' },
-  { id: 7, name: 'Peperomia Watermelon', growth: 'Foliage', lightLevel: 'medium-light', easyCare: false, airPurifying: true, humidityLevel: 'tropical', plantType:'Peperomia', petSafe: true, imageSrc: '/images.peperomia_watermelon.jpg' },
-  { id: 8, name: 'Pink Princess', growth: 'Vining', lightLevel: 'high-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Philodendron', petSafe: false, imageSrc: '/images.pink-princess.jpg' },
-  { id: 9, name: 'White Knight', growth: 'Vining', lightLevel: 'high-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Philodendron', petSafe: false, imageSrc: '/images.white-knight.jpg' },
-  { id: 10, name: 'White Wizard', growth: 'Vining', lightLevel: 'high-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Philodendron', petSafe: false, imageSrc: '/images.white_wizard.jpg' },
-  { id: 11, name: 'White Princess', growth: 'Vining', lightLevel: 'high-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Philodendron', petSafe: false, imageSrc: '/images.white_princess.jpg' },
-  { id: 12, name: 'Maidenhair Fern', growth: 'Foliage', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Fern', petSafe: true, imageSrc: '/images.maidenhair-fern.jpg' },
-  { id: 13, name: 'Hoya Rope', growth: 'Succulent', lightLevel: 'high-light', easyCare: true, airPurifying: false, humidityLevel: 'arid', plantType:'Hoya', petSafe: true, imageSrc: '/images.hoya_hope.jpg' },
-  { id: 14, name: 'Begonia Maculata', growth: 'Foliage', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Begonia', petSafe: false, imageSrc: '/images.begonia.jpg' },
-  { id: 15, name: 'Calathea Orbifolia', growth: 'Foliage', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Calatha', petSafe: true, imageSrc: '/images.calathea.jpg' }
+  { id: 1, name: 'Black Velvet', growth: 'Foliage', lightLevel: 'medium-light', easyCare: false, airPurifying: true, humidityLevel: 'Tropical', plantType:'Alocasia', petSafe: false, imageSrc: 'images/black-velvet.jpg' },
+  { id: 2, name: 'Monstera Split-Leaf', growth: 'Foliage', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'Tropical', plantType:'Philodendron', petSafe: false, imageSrc: 'images/monstera-deliciosa.jpg' },
+  { id: 3, name: 'Monstera Thai-Constellation', growth: 'Foliage', lightLevel: 'medium-light', easyCare: false, airPurifying: true, humidityLevel: 'Tropical', plantType:'Philodendron', petSafe: false, imageSrc: 'images/monstera-thai.jpg' },
+  { id: 4, name: 'Golden Pothos', growth: 'Vining', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'Temperate', plantType:'Pothos', petSafe: false, imageSrc: 'images/pothos.jpg' },
+  { id: 5, name: 'Neon Pothos', growth: 'Vining', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'Temperate', plantType:'Pothos', petSafe: false, imageSrc: 'images/neon-pothos.jpg' },
+  { id: 6, name: 'String of Hearts', growth: 'Succulent', lightLevel: 'high-light', easyCare: true, airPurifying: false, humidityLevel: 'arid', plantType:'Succulent', petSafe: true, imageSrc: 'images/string-hearts.jpg' },
+  { id: 7, name: 'Peperomia Watermelon', growth: 'Foliage', lightLevel: 'medium-light', easyCare: false, airPurifying: true, humidityLevel: 'tropical', plantType:'Peperomia', petSafe: true, imageSrc: 'images/peperomia_watermelon.jpg' },
+  { id: 8, name: 'Pink Princess', growth: 'Vining', lightLevel: 'high-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Philodendron', petSafe: false, imageSrc: 'images/pink-princess.jpg' },
+  { id: 9, name: 'White Knight', growth: 'Vining', lightLevel: 'high-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Philodendron', petSafe: false, imageSrc: 'images/white-knight.jpg' },
+  { id: 10, name: 'White Wizard', growth: 'Vining', lightLevel: 'high-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Philodendron', petSafe: false, imageSrc: 'images/white_wizard.jpg' },
+  { id: 11, name: 'White Princess', growth: 'Vining', lightLevel: 'high-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Philodendron', petSafe: false, imageSrc: 'images/white_princess.jpg' },
+  { id: 12, name: 'Maidenhair Fern', growth: 'Foliage', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Fern', petSafe: true, imageSrc: 'images/maidenhair-fern.jpg' },
+  { id: 13, name: 'Hoya Rope', growth: 'Succulent', lightLevel: 'high-light', easyCare: true, airPurifying: false, humidityLevel: 'arid', plantType:'Hoya', petSafe: true, imageSrc: 'images/hoya_hope.jpg' },
+  { id: 14, name: 'Begonia Maculata', growth: 'Foliage', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Begonia', petSafe: false, imageSrc: 'images/begonia.jpg' },
+  { id: 15, name: 'Calathea Orbifolia', growth: 'Foliage', lightLevel: 'medium-light', easyCare: true, airPurifying: true, humidityLevel: 'tropical', plantType:'Calatha', petSafe: true, imageSrc: 'images/calathea.jpg' }
 ];
 
 // Filters
